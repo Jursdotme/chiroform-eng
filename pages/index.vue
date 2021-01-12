@@ -32,7 +32,7 @@
         class="hover:bg-gray-50"
       >
         <NuxtLink
-          v-if="product.sku.toLowerCase().includes(search)"
+          v-if="product.sku.toLowerCase().includes(search.toLowerCase())"
           :to="product.slug"
           class="flex items-center px-4 py-4 sm:px-6"
         >
